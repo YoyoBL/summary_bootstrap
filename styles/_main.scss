@@ -1,0 +1,25 @@
+@import "./colors";
+
+.accordion-item:nth-child(odd) button {
+   background-color: $light;
+}
+
+.summary-content {
+   padding: 15px;
+
+   background-color: rgb(37, 41, 48);
+   font-family: Inconsolata;
+
+   & .left-line {
+      padding-left: 10px;
+      border-left: 3px solid $light;
+   }
+   & code {
+      color: white;
+      font-size: 1rem;
+   }
+
+   & .notes {
+      color: $notes;
+   }
+}
