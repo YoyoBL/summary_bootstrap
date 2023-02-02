@@ -22,4 +22,32 @@
    & .notes {
       color: $notes;
    }
+
+   & li {
+      color: white;
+   }
+}
+
+.overflow-examples {
+   margin-block-start: 10px;
+   width: 300px;
+   height: 50px;
+   /* overflow: auto; */
+   /* overflow: visible; */
+   /* overflow: scroll; */
+   /* overflow: hidden; */
+   background-color: #f00;
+}
+
+input#auto:checked ~ div.overflow-examples {
+   overflow: auto;
+}
+input#scroll:checked ~ div.overflow-examples {
+   overflow: scroll;
+}
+input#hidden:checked ~ div.overflow-examples {
+   overflow: hidden;
+}
+input#visible:checked ~ div.overflow-examples {
+   overflow: visible;
 }
