@@ -70,6 +70,14 @@ input#visible:checked ~ div.overflow-examples {
   overflow: visible;
 }
 
+li:nth-child(1) p.pc:hover {
+  color: purple;
+}
+
+li:nth-child(2) p.pc:active {
+  color: purple;
+}
+
 body {
   margin: 0;
 }

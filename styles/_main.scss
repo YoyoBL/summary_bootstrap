@@ -51,3 +51,17 @@ input#hidden:checked ~ div.overflow-examples {
 input#visible:checked ~ div.overflow-examples {
    overflow: visible;
 }
+
+// Pseudo classes examples
+
+li:nth-child(1) p.pc {
+   &:hover {
+      color: purple;
+   }
+}
+
+li:nth-child(2) p.pc {
+   &:active {
+      color: purple;
+   }
+}
