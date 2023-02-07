@@ -1820,6 +1820,83 @@
                         </div>
                      </div>
                   </div>
+
+                  <!-- Transition -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingThir">
+                        <button
+                           class="accordion-button collapsed"
+                           type="button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#collapseThir"
+                           aria-expanded="false"
+                           aria-controls="collapseThir"
+                        >
+                           Transition
+                        </button>
+                     </h2>
+                     <div
+                        id="collapseThir"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThir"
+                        data-bs-parent="#accordionExample"
+                     >
+                        <div class="summary-content">
+                           <p class="notes">
+                              Transitions are used to animate the transition
+                              between two states of the same element. <br />
+                              For example if a transformation is applied when
+                              :hover, :active ect.. <br />
+                              Syntax:
+                           </p>
+                           <div class="left-line">
+                              <code> transition: transform 2s ease-in; </code>
+                           </div>
+                           <p class="notes">
+                              In this example we've set the transition to apply
+                              on the transform parameter, <br />
+                              The animation will be 2 seconds long, <br />
+                              And will have a Ease-in effect (The animation will
+                              start fast and end slowly). <br />
+                              <span class="text-info fs-4">Remember!</span> you
+                              need to place the <code>transition</code> in the
+                              main CSS selector, NOT in the :hover Pseudo-class!
+                              <br />
+                              <br />
+                              You can set the transition to apply on all the
+                              different parameters, using 'all':
+                           </p>
+
+                           <div class="left-line">
+                              <code> transition: all 2s ease-in; </code>
+                           </div>
+                           <p class="notes">
+                              <br />
+                              Or you can set on multiple parameters, like this:
+                           </p>
+
+                           <div class="left-line">
+                              <code> transition: width 2s, height 4s; </code>
+                           </div>
+                           <p class="notes">
+                              This way you can set different timing for
+                              different parameters. <br /><br />
+                              Transitions examples:
+                           </p>
+                           <div class="row">
+                              <div class="col">
+                                 <div class="transition-example">1</div>
+                              </div>
+                              <div class="col">
+                                 <div class="transition-example">2</div>
+                              </div>
+                              <div class="col">
+                                 <div class="transition-example">3</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </main>
 

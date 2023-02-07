@@ -78,6 +78,15 @@ li:nth-child(2) p.pc:active {
   color: purple;
 }
 
+.transition-example {
+  background-color: aliceblue;
+  transition: all 0.2s;
+}
+.transition-example:hover {
+  transform: scale(1.1) rotate(3deg);
+  background-color: orange;
+}
+
 body {
   margin: 0;
 }
