@@ -1008,31 +1008,58 @@
                      </div>
                   </div>
 
-                  <div class="summary-content">
-                     <div class="left-line">
-                        <code>
-                           .container { <br />
-                           display: flex; <br />
-                           flex-direction: row | column; <br />
-                           flex-wrap: wrap | nowrap; <br />
-                           flex-flow: row wrap | column nowrap;
-                           <button
-                              type="button"
-                              class="btn btn-lg btn-info rounded-5 p-1 fs-6"
-                              data-bs-toggle="popover"
-                              title="flex-flow"
-                              data-bs-content="The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties."
-                           >
-                              i
-                           </button>
-                           <br />
-                           justify-content: flex-start | flex-end | center |
-                           space-between | space-around | space-evenly; <br />
-                           align-items: flex-start | flex-end | center |
-                           baseline | stretch; align-content. }
-                        </code>
+                  <!-- Display: flex -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingFourt">
+                        <button
+                           class="accordion-button collapsed"
+                           type="button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#collapseFourt"
+                           aria-expanded="false"
+                           aria-controls="collapseFourt"
+                        >
+                           Display: flex
+                        </button>
+                     </h2>
+                     <div
+                        id="collapseFourt"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFourt"
+                        data-bs-parent="#accordionExample"
+                     >
+                        <div class="summary-content">
+                           <div class="left-line">
+                              <p class="text-white">
+                                 .container { <br />
+                                 &nbsp; display: flex; <br />
+                                 &nbsp; flex-direction: row | column; <br />
+                                 &nbsp; flex-wrap: wrap | nowrap; <br />
+                                 &nbsp; flex-flow: row wrap | column nowrap;
+                                 <button
+                                    type="button"
+                                    class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                                    data-bs-toggle="popover"
+                                    title="flex-flow"
+                                    data-bs-content="The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties."
+                                 >
+                                    i
+                                 </button>
+                                 <br />
+                                 &nbsp; justify-content: flex-start | flex-end |
+                                 center | space-between | space-around |
+                                 space-evenly;
+                                 <br />
+                                 &nbsp; align-items: flex-start | flex-end |
+                                 center | baseline | stretch; <br />
+                                 }
+                              </p>
+                           </div>
+                        </div>
                      </div>
                   </div>
+
+                  <div class="summary-content"></div>
 
                   <!-- Overflow -->
                   <div class="accordion-item">
@@ -1951,14 +1978,14 @@
             </div>
          </div>
       </div>
+
+      <script>
+         var popoverTriggerList = [].slice.call(
+            document.querySelectorAll('[data-bs-toggle="popover"]')
+         );
+         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+         });
+      </script>
    </body>
 </html>
-
-<script>
-   var popoverTriggerList = [].slice.call(
-      document.querySelectorAll('[data-bs-toggle="popover"]')
-   );
-   var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl);
-   });
-</script>
