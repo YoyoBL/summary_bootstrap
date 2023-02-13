@@ -120,7 +120,7 @@
                         <ol>
                            <li>
                               <span class="notes">
-                                 1. Styling inside the element tag itself:
+                                 Styling inside the element tag itself:
                                  <br />
                               </span>
                               <div class="left-line">
@@ -133,7 +133,7 @@
 
                            <li>
                               <span class="notes">
-                                 2. Styling inside the HTML file Using
+                                 Styling inside the HTML file Using
                                  &lt;style&gt; tag:<br />
                               </span>
                               <div class="left-line">
@@ -152,10 +152,10 @@
                                  the &lt;head&gt; tag.<br />
                               </span>
                            </li>
-
+                           <br>
                            <li>
                               <span class="notes">
-                                 3. Linking to external CSS file:<br />
+                                 Linking to external CSS file:<br />
                               </span>
                               <div class="left-line">
                                  <code>
@@ -817,6 +817,8 @@
                   <div id="collapseFourt" class="accordion-collapse collapse" aria-labelledby="headingFourt"
                      data-bs-parent="#accordionExample">
                      <div class="summary-content">
+                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="btn btn-warning mb-3"
+                           target="_blank">Flex complete guide</a>
                         <div class="left-line overflow-auto" style="white-space: nowrap">
                            <code class="text-white">
                                  .container { <br />
@@ -847,79 +849,133 @@
                   </div>
                </div>
 
-               <div class="summary-content overflow-auto" style="white-space: nowrap;">
-                  <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="btn btn-warning"
-                     target="_blank">Grid complete guide</a>
-                  <a href="https://cssgridgarden.com/#he" class="btn btn-warning" target="_blank">Grid Game</a>
-                  <div class="left-line mt-2">
-                     <code>.container { <br>
-                        &nbsp; display: grid; <br>
-                        &nbsp; Grid-template-row: 20px 20px 
-                        <button
-                        type="button"
-                        class="btn btn-lg btn-info rounded-5 p-1 fs-6"
-                        data-bs-toggle="popover"
-                        title="Manual cell size"
-                        data-bs-content="2 cells, 20 px each"
-                     >
-                        i
-                     </button> 
-                         | 1fr 1fr 
-                         <button
-                         type="button"
-                         class="btn btn-lg btn-info rounded-5 p-1 fs-6"
-                         data-bs-toggle="popover"
-                         title="Fr (Fraction)"
-                         data-bs-content="2 cells equally sized, 1 fraction wide. each fraction takes equal space from the available space"
-                      >
-                         i
-                      </button> 
-                         
-                         | repeat(5, 1fr)
+               <!-- Display: grid -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFiftht">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFiftht" aria-expanded="false" aria-controls="collapseFiftht">
+                        Display: grid
+                     </button>
+                  </h2>
+                  <div id="collapseFiftht" class="accordion-collapse collapse" aria-labelledby="headingFiftht"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content overflow-auto" style="white-space: nowrap;">
+                        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="btn btn-warning"
+                           target="_blank">Grid complete guide</a>
+                        <a href="https://cssgridgarden.com/#he" class="btn btn-warning" target="_blank">Grid Game</a>
+                        <div class="left-line mt-2">
+                           <code>.container { <br>
+                              &nbsp; display: grid; <br>
+                              &nbsp; Grid-template-row: 20px 20px 
+                              <button
+                              type="button"
+                              class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                              data-bs-toggle="popover"
+                              title="Manual cell size"
+                              data-bs-content="2 cells, 20 px each"
+                           >
+                              i
+                           </button> 
+                               | 1fr 1fr 
+                               <button
+                               type="button"
+                               class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                               data-bs-toggle="popover"
+                               title="Fr (Fraction)"
+                               data-bs-content="2 cells equally sized, 1 fraction wide. each fraction takes equal space from the available space"
+                            >
+                               i
+                            </button> 
+                               
+                               | repeat(5, 1fr)
+      
+                               <button
+                               type="button"
+                               class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                               data-bs-toggle="popover"
+                               title="Repeat"
+                               data-bs-content="5 cells, 1fr wide each. another example: repeat(4, 20px) will create 4 cells, 20px wide each"
+                            >
+                               i
+                            </button> <br>
+      
+                            &nbsp; Grid-template-column: <span class="notes">same principles as above, but for the columns.</span> <br>
+                            &nbsp; row-gap: 10px; <br>
+                            &nbsp; column-gap: 15px; <br>
+                            &nbsp; gap: 10px 15px; 
+                            <button
+                            type="button"
+                            class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                            data-bs-toggle="popover"
+                            title="gap"
+                            data-bs-content="Shorthand for row-gap and column-gap"
+                         >
+                            i
+                         </button> 
+                           </code>
+                        </div>
+                        <div class="left-line mt-3">
+                           <code>
+                              .cell { <br>
+                                 grid-row: 3/5; 
+                                 <button
+                                 type="button"
+                                 class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                                 data-bs-toggle="popover"
+                                 title="grid-row"
+                                 data-bs-content="Starts at row 3, Finishes at row 5 (2 vertical cells)"
+                              >
+                                 i
+                              </button> <br>
+                                 grid-column: 3 / span 2;
+                                 <button
+                                 type="button"
+                                 class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                                 data-bs-toggle="popover"
+                                 title="span 2"
+                                 data-bs-content="Starts at column 3 and spans (expands) on 2 cells"
+                              >
+                                 i
+                              </button>
+                              }
+                           </code>
+                        </div>
 
-                         <button
-                         type="button"
-                         class="btn btn-lg btn-info rounded-5 p-1 fs-6"
-                         data-bs-toggle="popover"
-                         title="Repeat"
-                         data-bs-content="5 cells, 1fr wide each. another example: repeat(4, 20px) will create 4 cells, 20px wide each"
-                      >
-                         i
-                      </button> <br>
-
-                      &nbsp; Grid-template-column: <span class="notes">same principles as above, but for the columns.</span> <br>
-                      &nbsp; row-gap: 10px; <br>
-                      &nbsp; column-gap: 15px; <br>
-                      &nbsp; gap: 10px 15px; 
-                      <button
-                      type="button"
-                      class="btn btn-lg btn-info rounded-5 p-1 fs-6"
-                      data-bs-toggle="popover"
-                      title="gap"
-                      data-bs-content="Shorthand for row-gap and column-gap"
-                   >
-                      i
-                   </button> 
-                     </code>
-                  </div>
-                  <div class="left-line mt-3">
-                     <code>
-                        .cell { <br>
-                           grid-row: 3/5; 
-                           <button
-                           type="button"
-                           class="btn btn-lg btn-info rounded-5 p-1 fs-6"
-                           data-bs-toggle="popover"
-                           title="grid-row"
-                           data-bs-content="Starts at row 3, Finishes at row 5 (2 vertical cells)"
-                        >
-                           i
-                        </button> 
-                        }
-                     </code>
+                        <p class="notes">
+                           <br>
+                           Second grid method :
+                        </p>
+                        <div class="left-line"><code>
+                           .cell-a {  <br>
+                              &nbsp;grid-area: header; <br>
+                            } <br>
+                            .cell-b { <br>
+                              &nbsp;grid-area: main; <br>
+                            } <br>
+                            .cell-c { <br>
+                              &nbsp;grid-area: sidebar; <br>
+                            } <br>
+                            .cell-d { <br>
+                              &nbsp;grid-area: footer; <br>
+                            } <br>
+                             <br>
+                            .container { <br>
+                             &nbsp; display: grid; <br>
+                              &nbsp;grid-template-columns: 50px 50px 50px 50px; <br>
+                             &nbsp; grid-template-rows: auto; <br>
+                             &nbsp; grid-template-areas:  <br>
+                             &nbsp; &nbsp;   "header header header header" <br>
+                             &nbsp; &nbsp;   "main main . sidebar" <br>
+                             &nbsp; &nbsp;   "footer footer footer footer"; <br>
+                            } <br>
+                        </code></div>
+                        <br>
+                        <p class="notes">Result:</p>
+                        <img src="https://css-tricks.com/wp-content/uploads/2018/11/dddgrid-template-areas.svg"
+                           alt="grid-template-areas example" class="mw-75">
+                     </div>
                   </div>
                </div>
-
 
                <!-- Overflow -->
                <div class="accordion-item">
@@ -1635,14 +1691,53 @@
                      </div>
                   </div>
                </div>
-            </div>
-         </main>
 
-         <!-- Right Bar -->
-         <div class="col-sm-2 order-1 order-sm-0">
-            <div class="box">3</div>
-         </div>
+               <!-- Media queries -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSixt">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSixt" aria-expanded="false" aria-controls="collapseSixt">
+                        Media queries
+                     </button>
+                  </h2>
+                  <div id="collapseSixt" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p class="notes">Media queries are used to adapt the style to different screen sizes.</p>
+                        <div class="left-line"><code>
+                        <span class="notes">/* Set the background color of body to green */</span>  <br>
+                       body { <br>
+                        &nbsp;&nbsp;background-color: green; <br>
+                        &nbsp;} <br>
+ <br>
+                        <span class="notes">/* On screens that are 992px or less, set the background color to blue */</span> <br>
+                        @media screen and (max-width: 992px) { <br>
+                       &nbsp; body { <br>
+                        &nbsp; &nbsp; background-color: blue; <br>
+                        &nbsp;&nbsp; } <br>
+                       &nbsp; } <br>
+ <br>
+                        <span class="notes">/* On screens that are 600px or less, set the background color to olive */</span> <br>
+                        @media screen and (max-width: 600px) { <br>
+                       &nbsp; body { <br>
+                        &nbsp;  &nbsp; background-color: olive; <br>
+                        &nbsp;  &nbsp;} <br>
+                        } <br>
+                       </code></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
       </div>
+      </main>
+
+      <!-- Right Bar -->
+      <div class="col-sm-2 order-1 order-sm-0">
+         <div class="box">3</div>
+      </div>
+   </div>
    </div>
 
    <!-- Footer -->

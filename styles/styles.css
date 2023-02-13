@@ -18,7 +18,7 @@ nav {
   margin-right: 0%;
 }
 
-.accordion-item:nth-child(odd) button {
+.accordion-item:nth-child(odd) > h2 > button {
   background-color: aliceblue;
 }
 
@@ -29,7 +29,7 @@ nav {
 }
 .summary-content .left-line {
   padding-left: 10px;
-  border-left: 3px solid aliceblue;
+  border-left: 3px solid palevioletred;
 }
 .summary-content code {
   color: white;

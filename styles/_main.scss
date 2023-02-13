@@ -1,6 +1,6 @@
 @import "./colors";
 
-.accordion-item:nth-child(odd) button {
+.accordion-item:nth-child(odd)>h2>button {
    background-color: $light;
 }
 
@@ -12,7 +12,7 @@
 
    & .left-line {
       padding-left: 10px;
-      border-left: 3px solid $light;
+      border-left: 3px solid palevioletred;
    }
    & code {
       color: white;
