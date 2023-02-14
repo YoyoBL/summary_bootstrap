@@ -19,9 +19,10 @@
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"></script>
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
@@ -63,6 +64,8 @@
       <div class="row">
          <h3>HTML_Summary</h3>
          <hr />
+
+
          <!-- Left Bar -->
          <div class="col-sm-2 order-1 order-sm-0 px-sm-1 mt-3 mt-sm-0">
             <div class="row flex-sm-column gx-sm-2 ">
@@ -1743,6 +1746,69 @@
                      </div>
                   </div>
                </div>
+
+               <!-- Bootstrap -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSixTeen">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSixTeen" aria-expanded="false" aria-controls="collapseSixTeen">
+                        Bootstrap
+                     </button>
+                  </h2>
+                  <div id="collapseSixTeen" class="accordion-collapse collapse" aria-labelledby="headingSixTeen"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+
+                        <div class="px-3">
+                           <p class="notes">
+                              Bootstrap links:
+                           </p>
+                        </div>
+
+                        <div class="left-line position-relative">
+                           <button class="position-absolute end-0 btn btn-info p-1" onclick="copyText()">Copy</button>
+                           <p class="overflow-auto text-white-50" style="white-space: nowrap">
+                              &lt;link
+                              href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot;
+                              rel=&quot;stylesheet&quot;
+                              integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot;
+                              crossorigin=&quot;anonymous&quot;&gt; <br>
+                              &lt;script
+                              src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js&quot;
+                              integrity=&quot;sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN&quot;
+                              crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+                           </p>
+                           <script>
+                              function copyText() {
+
+                                 /* Copy text into clipboard */
+                                 navigator.clipboard.writeText
+                                    (`<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"><\/script>`);
+                              }
+                           </script>
+                        </div>
+                        <p class="notes">
+                           Download Bootstrap files:
+                        </p>
+                        <a
+                           href="https://github.com/twbs/bootstrap/releases/download/v5.3.0-alpha1/bootstrap-5.3.0-alpha1-dist.zip"><button
+                              class="btn btn-info">Download</button></a>
+
+
+                        <p class="notes mt-3">
+                           Bootstrap recommended video: <br>
+                        <div class="ratio ratio-16x9">
+                           <iframe src="https://www.youtube.com/embed/Jyvffr3aCp0" title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen></iframe>
+                        </div>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
             </div>
          </main>
 
