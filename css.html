@@ -1711,6 +1711,86 @@
                   </div>
                </div>
 
+               <!-- Animation @keyframes -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading20">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                        Animation @keyframes
+                     </button>
+                  </h2>
+                  <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <div class="left-line"><code>
+                            <div class="notes">The animation code:</div>  <br>
+                           @keyframes animation-name { <br>
+                              &nbsp;&nbsp;from {background-color: red;} <br>
+                              &nbsp;&nbsp;to {background-color: yellow;} <br>
+                           } <br>
+ <br>
+                            <div class="notes">The element to apply the animation to:</div>  <br>
+                           div { <br>
+                           &nbsp;&nbsp;width: 100px; <br>
+                           &nbsp;&nbsp;height: 100px; <br>
+                           &nbsp;&nbsp;background-color: red; <br>
+                           &nbsp;&nbsp;animation: animation-name 5s infinite; <br>
+                           } <br>
+                       </code></div>
+
+                        <div class="col-12 text-center">
+                           Result:
+                           <div class="animation-example1 mx-auto"></div>
+                        </div>
+
+                        <div class="notes my-4">
+                           Second method:
+                        </div>
+
+                        <div class="left-line"><code>
+                            <div class="notes">The animation code:</div> <br>
+                           @keyframes animation-name { <br>
+                           &nbsp;&nbsp;0%   {background-color: red;} <br>
+                           &nbsp;&nbsp;25%  {background-color: yellow;} <br>
+                           &nbsp;&nbsp;50%  {background-color: blue;} <br>
+                           &nbsp;&nbsp;100% {background-color: green;} <br>
+                           } <br>
+ <br>
+                            <div class="notes">The element to the animation to:</div>  <br>
+                           div { <br>
+                           &nbsp;&nbsp;width: 100px; <br>
+                           &nbsp;&nbsp;height: 100px; <br>
+                           &nbsp;&nbsp;background-color: red; <br>
+                           &nbsp;&nbsp;animation: animation-name 5s infinite; <br>
+                           } <br>
+                       </code></div>
+                        <div class="animation-example2"></div>
+
+                        <div class="notes my-3">
+                           Shorthand:
+                        </div>
+
+                        <div class="left-line">
+                           <code>
+                              long {<br>
+                              &nbsp;animation-name: example;<br>
+                              &nbsp;animation-duration: 5s;<br>
+                              &nbsp;animation-timing-function: linear;<br>
+                              &nbsp;animation-delay: 2s;<br>
+                              &nbsp;animation-iteration-count: infinite;<br>
+                              &nbsp;animation-direction: alternate;<br>
+                              }<br>
+                              <br>
+                              short {<br>
+                              &nbsp;animation: example 5s linear 2s infinite alternate;<br>
+                              }<br>
+                           </code>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
                <!-- Media queries -->
                <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSixt">
